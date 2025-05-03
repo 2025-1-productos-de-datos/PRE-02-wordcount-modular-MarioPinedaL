@@ -1,8 +1,8 @@
-from homework.src._internals.count_words_1 import count_words
-from homework.src._internals.preprocess_lines import preprocess_lines
-from homework.src._internals.read_all_lines import read_all_lines
-from homework.src._internals.split_in_words import split_in_words
-from homework.src._internals.write_count_words import write_count_words
+from .._internals.count_words_1 import count_words
+from .._internals.preprocess_lines import preprocess_lines
+from .._internals.read_all_lines import read_all_lines
+from .._internals.split_in_words import split_in_words
+from .._internals.write_count_words import write_count_words
 
 
 def main():
@@ -28,7 +28,6 @@ def main():
     #                 w = w.lower().strip(",.!?")
     #                 counter[w] = counter.get(w, 0) + 1
 
-    ##
     write_count_words(counter)
 
 
